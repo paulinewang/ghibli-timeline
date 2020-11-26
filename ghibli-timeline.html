@@ -7,29 +7,33 @@
 
   <body>
     <div class="main" onclick="hideCards(event)">
-      <ol class="timeline">
-        <li class="timeline-item">
-          <a class="timeline-year" onclick="toggleCard(event)">1984</a>
-          <div class="card movie movie1">
-            <p class="card-title">Nausicaä of the Valley of the Wind</p>
-          </div>
-        </li>
-        <li class="timeline-item">
-          <a class="timeline-year" onclick="toggleCard(event)">1986</a>
-          <div class="card movie movie2">
-            <p class="card-title">Castle in the Sky</p>
-          </div>
-        </li>
-        <li class="timeline-item">
-          <a class="timeline-year" onclick="toggleCard(event)">1988</a>
-          <div class="card movie movie3-1">
-            <p class="card-title">Grave of the Fireflies</p>
-          </div>
-          <div class="card movie movie3-2">
-            <p class="card-title">My Neighbor Totoro</p>
-          </div>
-        </li>
-      </ol>
+      <div class="timeline-wrapper">
+        <div class="timeline-events">
+          <ol class="timeline">
+            <li class="timeline-item">
+              <a class="timeline-year" onclick="toggleCard(event)">1984</a>
+              <div class="card movie movie1">
+                <p class="card-title">Nausicaä of the Valley of the Wind</p>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <a class="timeline-year" onclick="toggleCard(event)">1986</a>
+              <div class="card movie movie2">
+                <p class="card-title">Castle in the Sky</p>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <a class="timeline-year" onclick="toggleCard(event)">1988</a>
+              <div class="card movie movie3-1">
+                <p class="card-title">Grave of the Fireflies</p>
+              </div>
+              <div class="card movie movie3-2">
+                <p class="card-title">My Neighbor Totoro</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
 
       <h1 class="title">Studio Ghibli</h1>
     </div>
