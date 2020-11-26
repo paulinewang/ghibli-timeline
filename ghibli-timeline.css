@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,300;0,400;0,500;1,600&display=swap");
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  font-family: "Epilogue", sans-serif;
+  text-transform: uppercase;
+  font-size: 75px;
+  margin-top: 100px;
+  position: relative;
+}
+
+.main {
+  background: url("https://cdn.hipwallpaper.com/i/10/24/RBJZ0G.jpg") no-repeat
+    center center fixed;
+  background-size: cover;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 100px;
+}
+
+.timeline {
+  display: flex;
+  position: relative;
+}
+
+.timeline-year,
+.timeline-item {
+  list-style-type: none;
+}
+
+.timeline-year:not(:last-child) {
+  margin-right: 150px;
+}
+
+.clicked + .card {
+  display: flex;
+}
+
+.card {
+  height: 350px;
+  width: 250px;
+  display: none;
+  position: absolute;
+}
+
+.card.movie {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 15px;
+  /* display: flex; */
+}
+
+.card-title {
+  font-family: "Epilogue", sans-serif;
+  text-transform: uppercase;
+  align-self: flex-end;
+  font-size: 25px;
+  padding: 10px;
+  margin: 0;
+}
+
+.movie1 {
+  background: url("https://thereelbits.com/wp-content/uploads/2012/07/Nausicaa001f.jpeg");
+}
+
+.movie2 {
+  background: url("https://i1.sndcdn.com/artworks-000127213193-ox27bh-t500x500.jpg");
+  object-fit: cover;
+}
+
+.movie3-1 {
+  background: url("https://www.denofgeek.com/wp-content/uploads/2018/04/grave-main.jpg?fit=1200%2C675");
+  object-fit: cover;
+}
+.movie3-2 {
+  background: url("https://light-in-the-attic.s3.amazonaws.com/uploads/release_image/22597/image/large_550_tmp_2F1535749933457-5z2flj8pzod-0d4d93b7aba5010cbe7781e7d76b9caf_2Fimage%2Balbum.jpg");
+  object-fit: cover;
+}
