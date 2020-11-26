@@ -46,6 +46,7 @@ body {
   height: 2px;
   background: red;
   margin-top: 300px;
+  width: 100%;
 }
 
 .timeline-item {
@@ -104,20 +105,38 @@ body {
   margin: 0;
 }
 
+/* ==== Card images ==== */
+
+/* Nausicaä of the Valley of the Wind */
 .movie1 {
   background: url("https://thereelbits.com/wp-content/uploads/2012/07/Nausicaa001f.jpeg");
 }
 
+/* Castle in the Sky */
 .movie2 {
   background: url("https://i1.sndcdn.com/artworks-000127213193-ox27bh-t500x500.jpg");
-  object-fit: cover;
 }
 
+/* Grave of the Fireflies	 */
 .movie3-1 {
   background: url("https://www.denofgeek.com/wp-content/uploads/2018/04/grave-main.jpg?fit=1200%2C675");
-  object-fit: cover;
 }
+/* My Neighbor Totoro */
 .movie3-2 {
   background: url("https://light-in-the-attic.s3.amazonaws.com/uploads/release_image/22597/image/large_550_tmp_2F1535749933457-5z2flj8pzod-0d4d93b7aba5010cbe7781e7d76b9caf_2Fimage%2Balbum.jpg");
-  object-fit: cover;
+}
+
+/* Kiki's Delivery Service */
+.movie4 {
+  background: url("https://i.guim.co.uk/img/media/aa5f12bac3ba95322c58929eab0303262dc20340/321_175_1509_905/master/1509.jpg?width=1200&height=900&quality=85&auto=format&");
+}
+
+/* Only Yesterday */
+.movie5 {
+  background: url("https://cornellsun.com/wp-content/uploads/2016/03/maxresdefault5.jpg");
+}
+
+/* Porco Rosso */
+.movie6 {
+  background: url("https://www.dff.film/wp-content/uploads/2020/04/PorcoRosso-1.jpg");
 }
