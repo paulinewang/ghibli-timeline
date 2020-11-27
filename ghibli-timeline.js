@@ -20,3 +20,31 @@ function hideCards() {
     );
   }
 }
+
+function clickLeft() {
+  console.log("previous");
+  const timeline = document.querySelector(".timeline");
+  timeline.classList.add("scroll-left");
+}
+
+let currentTranslateValue = timeline.style.transform
+  ? timeline.style.transform.substring(11, 15)
+  : 0;
+
+console.log(currentTranslateValue);
+function clickRight() {
+  // const timeline = document.querySelector(".timeline");
+  // timeline.classList.add("scroll-right");
+  // const timeline = document.getElementById("timeline");
+  // const translate = timeline.style.transform;
+  // const currentTranslateValue = timeline.style.transform
+  //   ? timeline.style.transform.substring(11, 15)
+  //   : 0;
+  // console.log(currentTranslateValue);
+  // const newTranslateValue = Number(currentTranslateValue + 300);
+  const newTranslateValue = Number(currentTranslateValue + 300);
+  const translate = `translateX(${newTranslateValue})`;
+  timeline.style.transform = translate;
+  currentTranslateValue = newTranslateValue;
+  console.log(newTranslateValue);
+}

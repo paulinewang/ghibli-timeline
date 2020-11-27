@@ -8,8 +8,9 @@
   <body>
     <div class="main" onclick="hideCards(event)">
       <div class="timeline-wrapper">
+        <button class="previous" onclick="clickLeft()">PREVIOUS</button>
         <div class="timeline-events">
-          <ol class="timeline">
+          <ul class="timeline" id="timeline">
             <li class="timeline-item">
               <a class="timeline-year" onclick="toggleCard(event)">1984</a>
               <div class="card movie movie1">
@@ -54,8 +55,107 @@
                 <p class="card-title">Porco Rosso</p>
               </div>
             </li>
+
+            <li class="timeline-item">
+              <a class="timeline-year" onclick="toggleCard(event)">1994</a>
+              <div class="card movie movie7">
+                <p class="card-title">Pom Poko</p>
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <a class="timeline-year" onclick="toggleCard(event)">1995</a>
+              <div class="card movie movie8">
+                <p class="card-title">Whisper of the Heart</p>
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <a class="timeline-year" onclick="toggleCard(event)">1997</a>
+              <div class="card movie movie9">
+                <p class="card-title">Princess Mononoke</p>
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <a class="timeline-year" onclick="toggleCard(event)">1999</a>
+              <div class="card movie movie10">
+                <p class="card-title">My Neighbors the Yamadas</p>
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <a class="timeline-year" onclick="toggleCard(event)">2001</a>
+              <div class="card movie movie11">
+                <p class="card-title">Spirited Away</p>
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <a class="timeline-year" onclick="toggleCard(event)">2002</a>
+              <div class="card movie movie12">
+                <p class="card-title">The Cat Returns </p>
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <a class="timeline-year" onclick="toggleCard(event)">2004</a>
+              <div class="card movie movie13">
+                <p class="card-title">Howl's Moving Castle</p>
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <a class="timeline-year" onclick="toggleCard(event)">2006</a>
+              <div class="card movie movie14">
+                <p class="card-title">Tales from Earthsea</p>
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <a class="timeline-year" onclick="toggleCard(event)">2008</a>
+              <div class="card movie movie15">
+                <p class="card-title">Ponyo</p>
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <a class="timeline-year" onclick="toggleCard(event)">2010</a>
+              <div class="card movie movie16">
+                <p class="card-title">Arrietty</p>
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <a class="timeline-year" onclick="toggleCard(event)">2011</a>
+              <div class="card movie movie17">
+                <p class="card-title">From Up on Poppy Hill</p>
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <a class="timeline-year" onclick="toggleCard(event)">2013</a>
+              <div class="card movie movie18">
+                <p class="card-title">The Wind Rises</p>
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <a class="timeline-year" onclick="toggleCard(event)">2013</a>
+              <div class="card movie movie19">
+                <p class="card-title">The Tale of the Princess Kaguya</p>
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <a class="timeline-year" onclick="toggleCard(event)">2014</a>
+              <div class="card movie movie20">
+                <p class="card-title">When Marnie Was There</p>
+              </div>
+            </li>
           </ol>
         </div>
+        <button class="next" onclick="clickRight()">NEXT</button>
       </div>
 
       <h1 class="title">Studio Ghibli</h1>
@@ -64,75 +164,3 @@
 
   <script src="ghibli-timeline.js"></script>
 </html>
-
-<!-- 
-1984	Nausicaä of the Valley of the Wind 
-https://thereelbits.com/wp-content/uploads/2012/07/Nausicaa001f.jpeg
-
-1986	Castle in the Sky
-https://i1.sndcdn.com/artworks-000127213193-ox27bh-t500x500.jpg
-
-1988	Grave of the Fireflies	
-https://www.denofgeek.com/wp-content/uploads/2018/04/grave-main.jpg?fit=1200%2C675
-
-1988  My Neighbor Totoro
-https://light-in-the-attic.s3.amazonaws.com/uploads/release_image/22597/image/large_550_tmp_2F1535749933457-5z2flj8pzod-0d4d93b7aba5010cbe7781e7d76b9caf_2Fimage%2Balbum.jpg
-
-
-1989	Kiki's Delivery Service
-https://cdn.vox-cdn.com/thumbor/r4uo9ebOzDgJcVV5K8HdbA67pd0=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/20003462/GHI_Kiki_Select02.jpg
-
-https://i.guim.co.uk/img/media/aa5f12bac3ba95322c58929eab0303262dc20340/321_175_1509_905/master/1509.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=242ea5b7b0adae22bb80a3161a6c337f"
-
-1991	Only Yesterday
-https://cornellsun.com/wp-content/uploads/2016/03/maxresdefault5.jpg
-
-1992	Porco Rosso
-https://www.dff.film/wp-content/uploads/2020/04/PorcoRosso-1.jpg
-
-1994	Pom Poko
-https://www.isthismoviesuitable.com/wp-content/uploads/2013/05/Pom-Poko-featured-image-1280x720.jpg
-
-1995	Whisper of the Heart
-https://images-na.ssl-images-amazon.com/images/I/51KV03uuOlL._AC_.jpg
-
-1997	Princess Mononoke
-https://dazedimg-dazedgroup.netdna-ssl.com/1200/azure/dazed-prod/1210/6/1216840.jpg
-
-1999	My Neighbors the Yamadas
-https://www.japansociety.org/resources/legacy/event/yamadas_xl.jpg
-
-2001	Spirited Away
-https://www.indiewire.com/wp-content/uploads/2017/03/kf-spiritedaway-film-hero.jpg?w=670&h=377&crop=1
-
-2002	The Cat Returns 
-https://images-na.ssl-images-amazon.com/images/S/sgp-catalog-images/region_US/m7txl-TEQ33GV6M7R-Full-Image_GalleryBackground-en-US-1581442842569._RI_.jpg
-
-2004	Howl's Moving Castle
-https://moviebarfcom.files.wordpress.com/2020/04/1041062-3rd-pick-howls-moving-castle-lr.jpg
-
-2006	Tales from Earthsea
-https://i.pinimg.com/originals/15/c2/f0/15c2f089b580a40efe1a6d8f893c15cb.jpg
-
-2008	Ponyo
-https://static.rogerebert.com/uploads/review/primary_image/reviews/ponyo-2009/EB20090812REVIEWS908129989AR.jpg
-
-2010	Arrietty
-https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx7711-IDDzqp6d3tQz.jpg
-
-2011	From Up on Poppy Hill
-https://files.list.co.uk/images/2013/07/24/poppyhill.jpg
-
-2013	The Wind Rises
-https://i.pinimg.com/originals/1b/5d/9d/1b5d9d083a7703a7465a0bcab4ab8062.png
-
-2013 The Tale of the Princess Kaguya
-https://entropymag.org/wp-content/uploads/2015/12/tale-of-princess-kaguya.jpg
-
-2014	When Marnie Was There
-https://www.beautifulfraud.com/wp/wp-content/uploads/2016/05/when-marnie-was-there.jpg
-
-Feature films 
-  https://en.wikipedia.org/wiki/List_of_Studio_Ghibli_works
-
--->

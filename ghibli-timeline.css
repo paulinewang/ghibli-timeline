@@ -19,6 +19,14 @@ body {
   justify-content: flex-end;
   align-items: flex-start;
   padding-left: 100px;
+  width: 100%;
+  overflow: hidden;
+}
+
+button {
+  background: purple;
+  height: 35px;
+  width: 100px;
 }
 
 .title {
@@ -37,11 +45,15 @@ body {
   align-items: flex-end;
   flex: 3;
   width: 60vw;
+  /* position: relative; */
 }
 
+/* ul */
 .timeline {
   display: flex;
   position: relative;
+  /* width: 300%; */
+  transition: all 0.5s;
 }
 
 .timeline-events {
@@ -53,6 +65,17 @@ body {
 
 .timeline-item {
   margin-top: 15px;
+}
+
+.scroll-left {
+  margin-left: 0;
+  transition: all 0.5s;
+}
+
+.scroll-right {
+  /* margin-left: -75%; */
+  transform: translateX(-300px);
+  transition: all 0.5s;
 }
 
 .timeline-year,
@@ -141,4 +164,74 @@ body {
 /* Porco Rosso */
 .movie6 {
   background: url("https://www.dff.film/wp-content/uploads/2020/04/PorcoRosso-1.jpg");
+}
+
+/* Pom Poko */
+.movie7 {
+  background: url("https://www.isthismoviesuitable.com/wp-content/uploads/2013/05/Pom-Poko-featured-image-1280x720.jpg");
+}
+
+/* Whisper of the Heart */
+.movie8 {
+  background: url("https://images-na.ssl-images-amazon.com/images/I/51KV03uuOlL._AC_.jpg");
+}
+
+/* Princess Mononoke */
+.movie9 {
+  background: url("https://dazedimg-dazedgroup.netdna-ssl.com/1200/azure/dazed-prod/1210/6/1216840.jpg");
+}
+
+/* My Neighbors the Yamadas */
+.movie10 {
+  background: url("https://www.japansociety.org/resources/legacy/event/yamadas_xl.jpg");
+}
+
+/* Spirited Away */
+.movie11 {
+  background: url("https://www.indiewire.com/wp-content/uploads/2017/03/kf-spiritedaway-film-hero.jpg?w=670&h=377&crop=1");
+}
+
+/* The Cat Returns s */
+.movie12 {
+  background: url("https://images-na.ssl-images-amazon.com/images/S/sgp-catalog-images/region_US/m7txl-TEQ33GV6M7R-Full-Image_GalleryBackground-en-US-1581442842569._RI_.jpg");
+}
+
+/* Howl's Moving Castle */
+.movie13 {
+  background: url("https://moviebarfcom.files.wordpress.com/2020/04/1041062-3rd-pick-howls-moving-castle-lr.jpg");
+}
+
+/* Tales from Earthsea */
+.movie14 {
+  background: url("https://i.pinimg.com/originals/15/c2/f0/15c2f089b580a40efe1a6d8f893c15cb.jpg");
+}
+
+/* Ponyo */
+.movie15 {
+  background: url("https://static.rogerebert.com/uploads/review/primary_image/reviews/ponyo-2009/EB20090812REVIEWS908129989AR.jpg");
+}
+
+/* Arrietty */
+.movie16 {
+  background: url("https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx7711-IDDzqp6d3tQz.jpg");
+}
+
+/* From Up on Poppy Hill */
+.movie17 {
+  background: url("https://files.list.co.uk/images/2013/07/24/poppyhill.jpg");
+}
+
+/* The Wind Rises */
+.movie18 {
+  background: url("https://i.pinimg.com/originals/1b/5d/9d/1b5d9d083a7703a7465a0bcab4ab8062.png");
+}
+
+/* The Tale of the Princess Kaguya */
+.movie19 {
+  background: url("https://entropymag.org/wp-content/uploads/2015/12/tale-of-princess-kaguya.jpg");
+}
+
+/* When Marnie Was There */
+.movie20 {
+  background: url("https://www.beautifulfraud.com/wp/wp-content/uploads/2016/05/when-marnie-was-there.jpg");
 }
