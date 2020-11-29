@@ -7,160 +7,159 @@
 
   <body>
     <div class="main" onclick="hideCards(event)">
-      <ul class="navigation">
-        <button class="left" id="left" onclick="clickLeft()">Left</button>
-        <button class="right" id="right" onclick="clickRight()">Right</button>
-      </ul>
+      <div class="content">
+        <button class="left" id="left" onclick="clickLeft()">«</button>
+        <div class="timeline-wrapper" id="timeline-wrapper">
+          <div class="timeline-events">
+            <ul class="timeline" id="timeline">
+              <li class="timeline-item">
+                <a class="timeline-year" onclick="toggleCard(event)">1984</a>
+                <div class="card movie movie1">
+                  <p class="card-title">Nausicaä of the Valley of the Wind</p>
+                </div>
+              </li>
 
-      <div class="timeline-wrapper" id="timeline-wrapper">
-        <div class="timeline-events">
-          <ul class="timeline" id="timeline">
-            <li class="timeline-item">
-              <a class="timeline-year" onclick="toggleCard(event)">1984</a>
-              <div class="card movie movie1">
-                <p class="card-title">Nausicaä of the Valley of the Wind</p>
-              </div>
-            </li>
+              <li class="timeline-item">
+                <a class="timeline-year" onclick="toggleCard(event)">1986</a>
+                <div class="card movie movie2">
+                  <p class="card-title">Castle in the Sky</p>
+                </div>
+              </li>
 
-            <li class="timeline-item">
-              <a class="timeline-year" onclick="toggleCard(event)">1986</a>
-              <div class="card movie movie2">
-                <p class="card-title">Castle in the Sky</p>
-              </div>
-            </li>
+              <li class="timeline-item">
+                <a class="timeline-year" onclick="toggleCard(event)">1988</a>
+                <div class="card movie movie3-1">
+                  <p class="card-title">Grave of the Fireflies</p>
+                </div>
+                <div class="card movie movie3-2">
+                  <p class="card-title">My Neighbor Totoro</p>
+                </div>
+              </li>
 
-            <li class="timeline-item">
-              <a class="timeline-year" onclick="toggleCard(event)">1988</a>
-              <div class="card movie movie3-1">
-                <p class="card-title">Grave of the Fireflies</p>
-              </div>
-              <div class="card movie movie3-2">
-                <p class="card-title">My Neighbor Totoro</p>
-              </div>
-            </li>
+              <li class="timeline-item">
+                <a class="timeline-year" onclick="toggleCard(event)">1989</a>
+                <div class="card movie movie4">
+                  <p class="card-title">Kiki's Delivery Service</p>
+                </div>
+              </li>
 
-            <li class="timeline-item">
-              <a class="timeline-year" onclick="toggleCard(event)">1989</a>
-              <div class="card movie movie4">
-                <p class="card-title">Kiki's Delivery Service</p>
-              </div>
-            </li>
+              <li class="timeline-item">
+                <a class="timeline-year" onclick="toggleCard(event)">1991</a>
+                <div class="card movie movie5">
+                  <p class="card-title">Only Yesterday</p>
+                </div>
+              </li>
 
-            <li class="timeline-item">
-              <a class="timeline-year" onclick="toggleCard(event)">1991</a>
-              <div class="card movie movie5">
-                <p class="card-title">Only Yesterday</p>
-              </div>
-            </li>
+              <li class="timeline-item">
+                <a class="timeline-year" onclick="toggleCard(event)">1982</a>
+                <div class="card movie movie6">
+                  <p class="card-title">Porco Rosso</p>
+                </div>
+              </li>
 
-            <li class="timeline-item">
-              <a class="timeline-year" onclick="toggleCard(event)">1982</a>
-              <div class="card movie movie6">
-                <p class="card-title">Porco Rosso</p>
-              </div>
-            </li>
+              <li class="timeline-item">
+                <a class="timeline-year" onclick="toggleCard(event)">1994</a>
+                <div class="card movie movie7">
+                  <p class="card-title">Pom Poko</p>
+                </div>
+              </li>
 
-            <li class="timeline-item">
-              <a class="timeline-year" onclick="toggleCard(event)">1994</a>
-              <div class="card movie movie7">
-                <p class="card-title">Pom Poko</p>
-              </div>
-            </li>
+              <li class="timeline-item">
+                <a class="timeline-year" onclick="toggleCard(event)">1995</a>
+                <div class="card movie movie8">
+                  <p class="card-title">Whisper of the Heart</p>
+                </div>
+              </li>
 
-            <li class="timeline-item">
-              <a class="timeline-year" onclick="toggleCard(event)">1995</a>
-              <div class="card movie movie8">
-                <p class="card-title">Whisper of the Heart</p>
-              </div>
-            </li>
+              <li class="timeline-item">
+                <a class="timeline-year" onclick="toggleCard(event)">1997</a>
+                <div class="card movie movie9">
+                  <p class="card-title">Princess Mononoke</p>
+                </div>
+              </li>
 
-            <li class="timeline-item">
-              <a class="timeline-year" onclick="toggleCard(event)">1997</a>
-              <div class="card movie movie9">
-                <p class="card-title">Princess Mononoke</p>
-              </div>
-            </li>
+              <li class="timeline-item">
+                <a class="timeline-year" onclick="toggleCard(event)">1999</a>
+                <div class="card movie movie10">
+                  <p class="card-title">My Neighbors the Yamadas</p>
+                </div>
+              </li>
 
-            <li class="timeline-item">
-              <a class="timeline-year" onclick="toggleCard(event)">1999</a>
-              <div class="card movie movie10">
-                <p class="card-title">My Neighbors the Yamadas</p>
-              </div>
-            </li>
+              <li class="timeline-item">
+                <a class="timeline-year" onclick="toggleCard(event)">2001</a>
+                <div class="card movie movie11">
+                  <p class="card-title">Spirited Away</p>
+                </div>
+              </li>
 
-            <li class="timeline-item">
-              <a class="timeline-year" onclick="toggleCard(event)">2001</a>
-              <div class="card movie movie11">
-                <p class="card-title">Spirited Away</p>
-              </div>
-            </li>
+              <li class="timeline-item">
+                <a class="timeline-year" onclick="toggleCard(event)">2002</a>
+                <div class="card movie movie12">
+                  <p class="card-title">The Cat Returns</p>
+                </div>
+              </li>
 
-            <li class="timeline-item">
-              <a class="timeline-year" onclick="toggleCard(event)">2002</a>
-              <div class="card movie movie12">
-                <p class="card-title">The Cat Returns</p>
-              </div>
-            </li>
+              <li class="timeline-item">
+                <a class="timeline-year" onclick="toggleCard(event)">2004</a>
+                <div class="card movie movie13">
+                  <p class="card-title">Howl's Moving Castle</p>
+                </div>
+              </li>
 
-            <li class="timeline-item">
-              <a class="timeline-year" onclick="toggleCard(event)">2004</a>
-              <div class="card movie movie13">
-                <p class="card-title">Howl's Moving Castle</p>
-              </div>
-            </li>
+              <li class="timeline-item">
+                <a class="timeline-year" onclick="toggleCard(event)">2006</a>
+                <div class="card movie movie14">
+                  <p class="card-title">Tales from Earthsea</p>
+                </div>
+              </li>
 
-            <li class="timeline-item">
-              <a class="timeline-year" onclick="toggleCard(event)">2006</a>
-              <div class="card movie movie14">
-                <p class="card-title">Tales from Earthsea</p>
-              </div>
-            </li>
+              <li class="timeline-item">
+                <a class="timeline-year" onclick="toggleCard(event)">2008</a>
+                <div class="card movie movie15">
+                  <p class="card-title">Ponyo</p>
+                </div>
+              </li>
 
-            <li class="timeline-item">
-              <a class="timeline-year" onclick="toggleCard(event)">2008</a>
-              <div class="card movie movie15">
-                <p class="card-title">Ponyo</p>
-              </div>
-            </li>
+              <li class="timeline-item">
+                <a class="timeline-year" onclick="toggleCard(event)">2010</a>
+                <div class="card movie movie16">
+                  <p class="card-title">Arrietty</p>
+                </div>
+              </li>
 
-            <li class="timeline-item">
-              <a class="timeline-year" onclick="toggleCard(event)">2010</a>
-              <div class="card movie movie16">
-                <p class="card-title">Arrietty</p>
-              </div>
-            </li>
+              <li class="timeline-item">
+                <a class="timeline-year" onclick="toggleCard(event)">2011</a>
+                <div class="card movie movie17">
+                  <p class="card-title">From Up on Poppy Hill</p>
+                </div>
+              </li>
 
-            <li class="timeline-item">
-              <a class="timeline-year" onclick="toggleCard(event)">2011</a>
-              <div class="card movie movie17">
-                <p class="card-title">From Up on Poppy Hill</p>
-              </div>
-            </li>
+              <li class="timeline-item">
+                <a class="timeline-year" onclick="toggleCard(event)">2013</a>
+                <div class="card movie movie18">
+                  <p class="card-title">The Wind Rises</p>
+                </div>
+              </li>
 
-            <li class="timeline-item">
-              <a class="timeline-year" onclick="toggleCard(event)">2013</a>
-              <div class="card movie movie18">
-                <p class="card-title">The Wind Rises</p>
-              </div>
-            </li>
+              <li class="timeline-item">
+                <a class="timeline-year" onclick="toggleCard(event)">2013</a>
+                <div class="card movie movie19">
+                  <p class="card-title">The Tale of the Princess Kaguya</p>
+                </div>
+              </li>
 
-            <li class="timeline-item">
-              <a class="timeline-year" onclick="toggleCard(event)">2013</a>
-              <div class="card movie movie19">
-                <p class="card-title">The Tale of the Princess Kaguya</p>
-              </div>
-            </li>
-
-            <li class="timeline-item">
-              <a class="timeline-year" onclick="toggleCard(event)">2014</a>
-              <div class="card movie movie20">
-                <p class="card-title">When Marnie Was There</p>
-              </div>
-            </li>
-          </ul>
+              <li class="timeline-item">
+                <a class="timeline-year" onclick="toggleCard(event)">2014</a>
+                <div class="card movie movie20">
+                  <p class="card-title">When Marnie Was There</p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
 
+        <button class="right" id="right" onclick="clickRight()">»</button>
+      </div>
       <h1 class="title">Studio Ghibli</h1>
     </div>
   </body>
