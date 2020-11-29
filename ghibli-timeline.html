@@ -7,8 +7,12 @@
 
   <body>
     <div class="main" onclick="hideCards(event)">
-      <div class="timeline-wrapper">
-        <button class="previous" onclick="clickLeft()">PREVIOUS</button>
+
+      <button class="left" id="left" onclick="clickLeft()">Left</button>
+      <button class="right" id="right" onclick="clickRight()">Right</button>
+
+      <div class="timeline-wrapper" id="timeline-wrapper">
+
         <div class="timeline-events">
           <ul class="timeline" id="timeline">
             <li class="timeline-item">
@@ -155,7 +159,6 @@
             </li>
           </ol>
         </div>
-        <button class="next" onclick="clickRight()">NEXT</button>
       </div>
 
       <h1 class="title">Studio Ghibli</h1>

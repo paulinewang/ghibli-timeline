@@ -37,51 +37,42 @@ button {
   position: relative;
   display: flex;
   align-items: center;
-  flex: 2;
+  /* flex: 2; */
 }
 
 .timeline-wrapper {
-  display: flex;
-  align-items: flex-end;
-  flex: 3;
-  width: 60vw;
+  /* display: flex; */
+  /* align-items: flex-end; */
+  /* flex: 3; */
+  /* width: 60vw; */
   /* position: relative; */
+  /* white-space: nowrap; */
+  overflow: scroll;
+  width: 500px;
+}
+
+.timeline-events {
+  height: 2px;
+  background: white;
+  /* margin-top: 300px; */
+  /* width: 100%; */
 }
 
 /* ul */
 .timeline {
   display: flex;
   position: relative;
-  /* width: 300%; */
-  transition: all 0.5s;
-}
-
-.timeline-events {
-  height: 2px;
-  background: white;
-  margin-top: 300px;
-  width: 100%;
+  /* width: 60vw; */
 }
 
 .timeline-item {
   margin-top: 15px;
 }
 
-.scroll-left {
-  margin-left: 0;
-  transition: all 0.5s;
-}
-
-.scroll-right {
-  /* margin-left: -75%; */
-  transform: translateX(-300px);
-  transition: all 0.5s;
-}
-
 .timeline-year,
 .timeline-item {
   cursor: pointer;
-  list-style-type: none;
+  list-style: none;
 }
 
 .timeline-year::before {
