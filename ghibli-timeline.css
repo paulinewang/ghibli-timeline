@@ -28,7 +28,6 @@ body {
 }
 
 button {
-  background: white;
   height: 30px;
   width: 30px;
   border-radius: 50%;
@@ -36,6 +35,7 @@ button {
   background: transparent;
   color: white;
   font-size: 20px;
+  transform: translateY(-50px);
 }
 
 .title {
@@ -55,6 +55,7 @@ button {
   display: flex;
   overflow-y: hidden;
   padding-top: 400px;
+  /* padding-left: 100px; */
   padding-bottom: 50px;
   padding-right: 100px;
   width: 45vw;
@@ -72,13 +73,21 @@ button {
 
 .timeline-item {
   margin-top: 15px;
-}
-
-.timeline-item {
   cursor: pointer;
   list-style: none;
 }
 
+.timeline-item:first-of-type {
+  padding-left: 100px;
+}
+
+.timeline-year {
+  font-family: "Epilogue", sans-serif;
+  font-size: 20px;
+  margin-right: 150px;
+}
+
+/* the white dot on the line */
 .timeline-year::before {
   border-radius: 50%;
   transform: translateX(18px);
@@ -88,12 +97,6 @@ button {
   background-color: white;
   height: 12px;
   width: 12px;
-}
-
-.timeline-year {
-  font-family: "Epilogue", sans-serif;
-  font-size: 20px;
-  margin-right: 150px;
 }
 
 .clicked + .card {
