@@ -108,6 +108,7 @@ button {
   width: 250px;
   display: none;
   position: absolute;
+  animation: fade-in-down 0.5s ease;
 }
 
 .card.movie {
@@ -125,6 +126,21 @@ button {
   font-size: 25px;
   padding: 10px;
   margin: 0;
+}
+
+/* ============ Animations ============s */
+
+@keyframes fade-in-down {
+  0% {
+    opacity: 0;
+    transform: translate(-100px, -445px);
+    /* transform: translateY(-20px); */
+  }
+  100% {
+    opacity: 1;
+    /* transform: translateY(0); */
+    transform: translate(-100px, -425px);
+  }
 }
 
 /* ============ Card images ============s */
