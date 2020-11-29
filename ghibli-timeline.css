@@ -8,6 +8,11 @@ body {
   padding: 0;
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
 .main {
   background: url("https://cdn.hipwallpaper.com/i/10/24/RBJZ0G.jpg") no-repeat
     center center fixed;
@@ -18,7 +23,6 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
-  padding-left: 100px;
   width: 100%;
   overflow: hidden;
 }
@@ -33,43 +37,34 @@ button {
   font-family: "Epilogue", sans-serif;
   text-transform: uppercase;
   font-size: 75px;
-  /* margin-top: 100px; */
-  position: relative;
-  display: flex;
-  align-items: center;
-  /* flex: 2; */
+  padding-left: 100px;
 }
 
 .timeline-wrapper {
-  /* display: flex; */
-  /* align-items: flex-end; */
-  /* flex: 3; */
-  /* width: 60vw; */
-  /* position: relative; */
-  /* white-space: nowrap; */
-  overflow: scroll;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding-top: 400px;
+  padding-bottom: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
   width: 500px;
 }
 
 .timeline-events {
   height: 2px;
   background: white;
-  /* margin-top: 300px; */
-  /* width: 100%; */
 }
 
-/* ul */
 .timeline {
   display: flex;
   position: relative;
-  /* width: 60vw; */
 }
 
 .timeline-item {
   margin-top: 15px;
 }
 
-.timeline-year,
 .timeline-item {
   cursor: pointer;
   list-style: none;
@@ -86,10 +81,9 @@ button {
   width: 12px;
 }
 
-.timeline-year:not(:last-child) {
+.timeline-year {
   font-family: "Epilogue", sans-serif;
   font-size: 20px;
-  font-weight: 600;
   margin-right: 150px;
 }
 
