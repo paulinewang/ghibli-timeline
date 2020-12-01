@@ -55,7 +55,6 @@ button {
   display: flex;
   overflow-y: hidden;
   padding-top: 400px;
-  /* padding-left: 100px; */
   padding-bottom: 50px;
   padding-right: 100px;
   width: 45vw;
@@ -117,6 +116,7 @@ button {
   background-position: center;
   border-radius: 15px;
   transform: translate(-100px, -425px);
+  cursor: default;
 }
 
 .card-title {
