@@ -64,6 +64,7 @@ button {
 .timeline-events {
   height: 2px;
   background: white;
+  padding-right: 125px;
 }
 
 .timeline {
@@ -84,7 +85,6 @@ button {
 .timeline-year {
   font-family: "Epilogue", sans-serif;
   font-size: 20px;
-  margin-right: 150px;
 }
 
 /* the white dot on the line */
